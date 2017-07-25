@@ -4,16 +4,16 @@
  * Not using gulp-load-plugins as it is nice to see whats here.
  *
  **/
-var gulp = require('gulp');
-var sass = require('gulp-sass');
-var browserSync  = require('browser-sync');
-var prefix = require('gulp-autoprefixer');
-var plumber = require('gulp-plumber');
-var uglify = require('gulp-uglify');
-var concat = require('gulp-concat');
-var rename = require("gulp-rename");
-var imagemin = require("gulp-imagemin");
-var pngquant = require('imagemin-pngquant');
+var gulp        = require('gulp');
+var sass        = require('gulp-sass');
+var browserSync = require('browser-sync');
+var prefix      = require('gulp-autoprefixer');
+var plumber     = require('gulp-plumber');
+var uglify      = require('gulp-uglify');
+var concat      = require('gulp-concat');
+var rename      = require("gulp-rename");
+var imagemin    = require("gulp-imagemin");
+var pngquant    = require('imagemin-pngquant');
 
 /**
  *
@@ -46,6 +46,21 @@ gulp.task('sass:clean', function() {
         .pipe(prefix('last 2 versions', '> 1%', 'ie 8', 'Android 2', 'Firefox ESR'))
         .pipe(plumber())
         .pipe(gulp.dest('assets/dist/css'));
+});
+
+/**
+*
+* BrowserSync.io
+* - Watch CSS, JS & HTML for changes
+* - View project at: localhost:3000
+*
+**/
+gulp.task('browser-sync', function() {
+  browserSync.init(['css/*.css', 'js/**/*.js', 'index.html'], {
+    server: {
+      baseDir: './'
+    }
+  });
 });
 
 /**

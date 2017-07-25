@@ -1,0 +1,80 @@
+/*!
+ Theme Name:   OTOBRO microsite
+ Theme URI:    http://c88fin.com/
+ Description:  OTOBRO microsite based on C88's microsite theme
+ Author:       Utomo Hendra Saputra
+ Author URI:   http://c88fin.com
+ Template:     compare-master
+ Version:      1.0.0
+ Text Domain:  otobro-microsite
+*/
+
+// framework variables
+@import "framework/functions";
+@import "framework/variables";
+@import "framework/fontface";
+// Core variables and mixins
+@import "bootstrap/bootstrap/variables";
+@import "bootstrap/bootstrap/mixins";
+// Reset and dependencies
+@import "bootstrap/bootstrap/normalize";
+// framework layout
+@import "framework/mixins";
+@import "framework/layout";
+@import "framework/layout-header";
+@import "framework/layout-footer";
+@import "framework/layout-drawer";
+@import "framework/icons";
+// Core CSS
+@import "bootstrap/bootstrap/scaffolding";
+@import "bootstrap/bootstrap/type";
+@import "bootstrap/bootstrap/code";
+@import "bootstrap/bootstrap/grid";
+@import "bootstrap/bootstrap/tables";
+@import "bootstrap/bootstrap/forms";
+// Components
+@import "bootstrap/bootstrap/navs";
+@import "bootstrap/bootstrap/button-groups";
+@import "bootstrap/bootstrap/input-groups";
+@import "bootstrap/bootstrap/modals";
+@import "bootstrap/bootstrap/media";
+@import "bootstrap/bootstrap/alerts";
+@import "bootstrap/bootstrap/close";
+// Components w/ JavaScript
+@import "bootstrap/bootstrap/modals";
+@import "bootstrap/bootstrap/tooltip";
+@import "bootstrap/bootstrap/popovers";
+// Utility classes
+@import "bootstrap/bootstrap/utilities";
+@import "bootstrap/bootstrap/responsive-utilities";
+// ------------------------- avoid changing these ------------------------- //
+// framework core
+@import "framework/typesetting";
+@import "framework/article";
+@import "framework/display";
+@import "framework/utilities";
+@import "framework/modal";
+@import "framework/media";
+@import "framework/share";
+@import "framework/tabs";
+// framework form
+@import "framework/buttons";
+@import "framework/alert";
+@import "framework/forms";
+@import "framework/form-radio";
+@import "framework/form-checkbox";
+@import "framework/form-feedback";
+@import "framework/form-addon";
+@import "framework/form-search";
+// ---------------- these can be modified, but with caution --------------- //
+// framework utility
+@import "framework/menus";
+@import "framework/content";
+@import "framework/breadcrumb";
+@import "framework/section";
+@import "framework/widget";
+@import "framework/cards";
+@import "framework/columns";
+@import "framework/grid";
+// custom components
+@import "framework/dialog";

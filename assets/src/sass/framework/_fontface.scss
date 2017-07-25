@@ -1,0 +1,26 @@
+// SCSS File
+// fontface.scss
+// Modified July 24, 2017
+
+
+// font face style
+
+@import url('https://fonts.googleapis.com/css?family=Lato|Roboto+Condensed');
+@font-face { font-family: 'hanzipen'; src: url('../fonts/hanzipen-handwriting-webfont.woff2') format('woff2'), url('../fonts/hanzipen-handwriting-webfont.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'lustria'; src: url('../fonts/lustria-regular-webfont.woff2') format('woff2'), url('../fonts/lustria-regular-webfont.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+// fonts loaded style
+
+.fonts-loaded {
+
+	body {
+	
+		font-family: $font-family-light;
+
+		&.mobile {
+
+			font-family: $font-family-regular;
+		}
+	}
+}
+

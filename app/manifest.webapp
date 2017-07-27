@@ -1,0 +1,25 @@
+{
+  "version": "1.0.0",
+  "name": "otobro microsite",
+  "launch_path": "/index.html",
+  "description": "otobro microsite based on compare master",
+  "icons": {
+    "128": "/images/touch/icon-128x128.png"
+  },
+  "developer": {
+    "name": "Utomo Hendra Saputra",
+    "url": ""
+  },
+  "installs_allowed_from": [
+    "*"
+  ],
+  "default_locale": "en",
+  "permissions": {
+  },
+  "locales": {
+    "en": {
+      "name": "otobro microsite",
+      "description": "otobro microsite based on compare master"
+    }
+  }
+}

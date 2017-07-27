@@ -13,11 +13,14 @@
 @import "framework/functions";
 @import "framework/variables";
 @import "framework/fontface";
+
 // Core variables and mixins
 @import "bootstrap/bootstrap/variables";
 @import "bootstrap/bootstrap/mixins";
+
 // Reset and dependencies
 @import "bootstrap/bootstrap/normalize";
+
 // framework layout
 @import "framework/mixins";
 @import "framework/layout";
@@ -25,6 +28,7 @@
 @import "framework/layout-footer";
 @import "framework/layout-drawer";
 @import "framework/icons";
+
 // Core CSS
 @import "bootstrap/bootstrap/scaffolding";
 @import "bootstrap/bootstrap/type";
@@ -32,6 +36,7 @@
 @import "bootstrap/bootstrap/grid";
 @import "bootstrap/bootstrap/tables";
 @import "bootstrap/bootstrap/forms";
+
 // Components
 @import "bootstrap/bootstrap/navs";
 @import "bootstrap/bootstrap/button-groups";
@@ -40,13 +45,16 @@
 @import "bootstrap/bootstrap/media";
 @import "bootstrap/bootstrap/alerts";
 @import "bootstrap/bootstrap/close";
+
 // Components w/ JavaScript
 @import "bootstrap/bootstrap/modals";
 @import "bootstrap/bootstrap/tooltip";
 @import "bootstrap/bootstrap/popovers";
+
 // Utility classes
 @import "bootstrap/bootstrap/utilities";
 @import "bootstrap/bootstrap/responsive-utilities";
+
 // ------------------------- avoid changing these ------------------------- //
 // framework core
 @import "framework/typesetting";
@@ -57,6 +65,7 @@
 @import "framework/media";
 @import "framework/share";
 @import "framework/tabs";
+
 // framework form
 @import "framework/buttons";
 @import "framework/alert";
@@ -66,6 +75,7 @@
 @import "framework/form-feedback";
 @import "framework/form-addon";
 @import "framework/form-search";
+
 // ---------------- these can be modified, but with caution --------------- //
 // framework utility
 @import "framework/menus";
@@ -76,5 +86,6 @@
 @import "framework/cards";
 @import "framework/columns";
 @import "framework/grid";
+
 // custom components
 @import "framework/dialog";

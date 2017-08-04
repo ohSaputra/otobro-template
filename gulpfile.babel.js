@@ -87,7 +87,8 @@ gulp.task('scripts', () =>
       // Other scripts
       './app/scripts/customizer.js',
       './app/scripts/navigation.js',
-      './app/scripts/skip-link-focus-fix.js'
+      './app/scripts/skip-link-focus-fix.js',
+      './app/scripts/navbar.js'
     ])
       .pipe($.newer('.tmp/scripts'))
       .pipe($.sourcemaps.init())

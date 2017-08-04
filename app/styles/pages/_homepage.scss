@@ -1,0 +1,26 @@
+// SCSS File
+// homepage.scss
+// Created at August 2, 2017
+
+// layout homepage
+
+.find-car {
+    background-color: $theme-color;
+    margin-bottom: 72px;
+    margin-top: 36px;
+
+    .bg-find-car {
+
+        height: 155%;
+        width: 80%;
+        left: 30%;
+        top: 0;
+        z-index: 1;
+        position: absolute;
+        background-size: cover;
+    }
+}
+
+.section.latest-news {
+    padding-top: 0
+}

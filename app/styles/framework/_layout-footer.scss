@@ -10,7 +10,7 @@
     width: 100%;
     background-color: $theme-color;
     color: $black-color;
-    font-size: 90%;
+    font-size: 14px;
 
     @media (max-width: $screen-md-max) { 
         
@@ -19,8 +19,7 @@
 
     .container {
 
-		padding-top: 24px;
-		padding-bottom: 24px;
+		padding: 50px;
 	}
     .foot {
 
@@ -38,6 +37,11 @@
 
     		padding-bottom: 24px;
     	}
+
+        p {
+            font-size: 14px;
+            color: $black-color;
+        }
     }
     .foot-bottom {
 

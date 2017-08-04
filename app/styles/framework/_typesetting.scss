@@ -8,10 +8,12 @@
 h1, h2, h3, h4, h5, h6, p, ul, ol, dl {
 
 	font-weight: 300;
+	color: $black-color;
 }
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 
-	font-family: $font-family-semibold;
+	font-family: $font-family-serif;
+	color: $black-color;
 }
 h1, .h1, h2, .h2, .lead {
   	
@@ -32,6 +34,8 @@ p, .paragraph {
 	margin-bottom: $paragraph-margin-bottom;
 	font-size: $font-size-base;
 	color: $text-color;
+	font-family: $font-family-regular;
+	letter-spacing: $content-spacing;
 	
 	&.lead {
 
@@ -60,6 +64,7 @@ ul, ol {
 	li {
 		
 		margin-bottom: 0.588rem;
+		color: $black-color;
 
         > ol, > ul {
 
@@ -80,6 +85,7 @@ a {
 
 		outline: 0;
 		color: inherit;
+		text-decoration: none;
 	}
 	&::-moz-focus-inner {
 		

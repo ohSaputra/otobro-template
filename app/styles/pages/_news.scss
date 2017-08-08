@@ -1,0 +1,46 @@
+// SCSS File
+// latest-news.scss
+// Created at August 2, 2017
+
+// layout news-latest
+
+.latest-news-page {
+
+    h1, h2, h3, h4, h5, h6 {
+        margin-top: 0;
+    }
+    .news-item {
+
+        border-top: 1px solid $theme-color;
+        padding: 15px 0;
+    }
+}
+
+// layout news-detail
+
+.news-title-full {
+
+    .post-date {
+        border-top: 1px solid $theme-color;
+        border-bottom: 1px solid $theme-color;
+        padding: 24px 0;
+    }
+}
+
+figure.img-container {
+
+    figcaption {
+
+        font-size: 80%;
+        margin-top: 1.882rem;
+        margin-bottom: 24px;
+        font-family: $font-family-light;
+    }
+}
+
+.news-detail {
+
+    p {
+        font-family: $font-family-light;
+    }
+}

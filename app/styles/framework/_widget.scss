@@ -66,7 +66,7 @@
 		li {
 
 			margin: 0;
-			padding: 6px 0;
+			padding: 10px 0;
 			border-top: 1px solid $divider-color;
 
 			a {
@@ -309,3 +309,31 @@
 	}
 }
 
+//  widget popular style
+
+.widget-popular {
+
+	.widget-body {
+
+		li {
+			border: none;
+		}
+
+		img {
+			max-width: 30%;
+			display: inline-block;
+			vertical-align: top;
+		}
+
+		p {
+			max-width: 60%;
+			display: inline-block;
+			padding-left: 5px;
+			font-size: 13px;
+			font-family: $font-family-serif;
+			line-height: 17px;
+		}
+
+	}
+
+}

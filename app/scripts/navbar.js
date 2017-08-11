@@ -11,6 +11,7 @@
 
     $(window).scroll(function(event){
 
+        // get last position of navbar
         var st = $(this).scrollTop();
 
         if (st > lastScrollTop){

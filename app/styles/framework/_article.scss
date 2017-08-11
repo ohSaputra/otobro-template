@@ -27,8 +27,12 @@
     }
     .post-date {
         font-family: $font-family-light;
-        font-size: 14px;
-        padding-bottom: 24px;
+        font-size: $font-size-figcaption;
+        padding-bottom: $paragraph-margin-bottom;
+
+        a:hover {
+            text-decoration: underline;
+        }
     }
 }
 

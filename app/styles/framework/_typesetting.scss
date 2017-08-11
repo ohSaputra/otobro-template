@@ -34,7 +34,7 @@ p, .paragraph {
 	margin-bottom: $paragraph-margin-bottom;
 	font-size: $font-size-base;
 	color: $text-color;
-	font-family: $font-family-regular;
+	font-family: $font-family-light;
 	letter-spacing: $content-spacing;
 	
 	&.lead {
@@ -311,3 +311,14 @@ mark, .mark {
 	hyphens: auto;
 }
 
+// caption
+
+.caption,
+figcaption {
+
+	font-size: $font-size-figcaption;
+	color: $caption-color;
+	margin-top: 1.882rem;
+	margin-bottom: $figure-margin-bottom;
+	font-family: $font-family-light;
+}

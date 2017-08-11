@@ -12,22 +12,85 @@
         z-index: 1;
 
         .main-nav {
+
             position: absolute;
-            padding-right: 15px;
             right: 0;
 
             ul {
+
                 padding-left: 0;
                 padding-top: 10px;
                 padding-right: 15px;
                 margin: 0;
 
                 li {
+
                     list-style-type: none;
                     display: inline;
                     font-family: $font-family-light
+
                 }
             }
+
+            .hamburger-btn,
+            #hamburger-icon {
+
+                margin-top: 9px;
+
+                .line {
+
+                    width: 20px;
+                    height: 1px;
+                    background-color: #000;
+                    display: block;
+                    margin: 5px auto;
+                    -webkit-transition: all 0.3s ease-in-out;
+                    -o-transition: all 0.3s ease-in-out;
+                    transition: all 0.3s ease-in-out;
+
+                    &:nth-child(2){
+
+                       width: 15px;
+                       margin-left: 5px;
+
+                    }
+
+                }
+
+                &:hover {
+
+                    cursor: pointer;
+
+                }
+
+                &.is-active {
+
+                    .line:nth-child(2){
+
+                        opacity: 0;
+
+                    }
+                    .line:nth-child(1){
+
+                        -webkit-transform: translateY(6px) rotate(45deg);
+                        -ms-transform: translateY(6px) rotate(45deg);
+                        -o-transform: translateY(6px) rotate(45deg);
+                        transform: translateY(6px) rotate(45deg);
+
+                    }
+                    .line:nth-child(3){
+
+                        -webkit-transform: translateY(-6px) rotate(-45deg);
+                        -ms-transform: translateY(-6px) rotate(-45deg);
+                        -o-transform: translateY(-6px) rotate(-45deg);
+                        transform: translateY(-6px) rotate(-45deg);
+
+                    }
+
+                }
+
+            }
+
         }
 
         .logo {
@@ -95,15 +158,19 @@
 
     }
     &.navbar-fixed-top {
+
         position: fixed;
         top: 0;
         right: 0;
         left: 0;
         z-index: 1030;
         transition-duration: 0.2s;
+        
     }
     &.navbar-scroll {
+
         transform: translateY(-52px);
 		transition-duration: 0.6s;
+
     }
 }

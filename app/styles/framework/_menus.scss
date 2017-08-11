@@ -360,3 +360,86 @@
     }
 }
 
+// overlay menu navigation
+
+.overlay {
+
+    background: #fff;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    z-index: 6;
+    display: none;
+
+    @media (max-width: 512px) {
+        overflow: scroll;
+    }
+
+    .menus {
+
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
+        margin: auto;
+        height: 180px;
+
+        @media (max-width: 512px) {
+
+            height: 354px;
+
+        }
+
+        ul {
+
+            padding-left: 0;
+
+            li {
+
+                list-style-type: none;
+                font-family: $font-family-serif;
+                display: inline-block;
+                margin-bottom: 60px;
+
+                @media screen and (max-width: 800px) {
+
+                    margin-bottom: 0;
+                    line-height: 52px;
+                    display: block;
+
+                }
+
+                &:hover {
+
+                    font-weight: bold;
+
+                }
+
+                &:not(:first-child):before {
+
+                    content: "|";
+                    margin-right: 50px;
+                    margin-left: 50px;
+                    font-weight: normal;
+
+                    @media screen and (max-width: 800px) {
+
+                        display: none;
+
+                    }
+
+                }
+
+            }
+
+        }
+        
+    }
+
+}
+

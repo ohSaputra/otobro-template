@@ -18,6 +18,12 @@
         z-index: 1;
         position: absolute;
         background-size: cover;
+
+        @media screen and (max-width: $screen-lg) {
+
+            height: 30vh;
+
+        }
     }
 }
 
